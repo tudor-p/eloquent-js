@@ -60,10 +60,44 @@ ages.set("Tudor", 24)
 
 // get values
 
-console.log(ages.get("Tudor")) // logs 24
+// console.log(ages.get("Tudor")) // logs 24
 
-console.log(ages.has("Tudor")) // logs true or false
+// console.log(ages.has("Tudor")) // logs true or false
 
+// classes practical examples with explanations
+
+class Library {
+    constructor (itemName, id) {
+        this.itemName = itemName
+        this.id = id
+    }
+
+    get itemDetails () {
+        return `Item's name is ${this.itemName} and it's ID is ${this.id}` 
+    }
+
+    set itemDetails (id) { // must take only 1 argument
+        this.id = id
+    }
+
+}
+
+let item1 = new Library ("Neuromancer", 1)
+
+item1.itemDetails = 100
+
+console.log(item1.itemDetails) // logs "Item's name is Neuromancer and it's ID is 100"
+
+class Book extends Library { // this a subclass of Library. 
+    constructor (itemName, id, colour) { 
+        super (itemName, id) // this grabs the properties of the previous constructor
+        this.colour = colour
+    }
+}
+
+let book2 = new Book ("Random name", 10000, "red")
+
+console.log(book2)
 
 
 
