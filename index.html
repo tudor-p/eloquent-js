@@ -4,10 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Eloquent-JS</title>
+
+    <style>
+        #progress {
+          border-bottom: 2px solid blue;
+          width: 0;
+          position: fixed;
+          top: 0; left: 0;
+        }
+      </style>
+    
 </head>
 
 <body>
-<script src="chapter10-modules.js"></script>
+    <div id="sector1">
+        <h1 class="isNode" id="1"> This is element 1.</h1>
+        <h1 class="isNode" id="2"> This is element 2.</h1>
+        <h1 class="isNode" id="3"> This is element 3.</h1>
+    </div>
 
+    <blockquote>
+        Something Something just testing this badboy out
+    </blockquote>
+
+    <ul id="list">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+
+    <p>Drag the bar to change its width:</p>
+    <div style="background: orange; width: 60px; height: 20px"></div>
+
+    <div id="progress"></div>
+
+    <p>Name: <input type="text" data-help="Your full name"></p>
+    <p>Age: <input type="text" data-help="Your age in years"></p>
+    <p id="help"></p>
+
+      
+    <script src="chapter15-handling-events.js"></script>
+    
 </body>
 </html>
