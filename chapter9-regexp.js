@@ -70,9 +70,9 @@ console.log(/^[a-z]{5}$/.test("abcde")) // this will only match a 5 letter strin
 // is that it would log true even if someone types 500 chars, because it matches the first expression
 
 
-//  | is the "or" operator of regexp, it works well with (). Ex: /(pet/toy) dog/
+//  | is the "or" operator of regexp, it works well with (). Ex: /(pet|toy) dog/
 
-//you can and an 'i' at the end of the regexp to make it case insensitive
+// you can and an 'i' at the end of the regexp to make it case insensitive
 
 // /lalala/.exec() method gives you a 
 
